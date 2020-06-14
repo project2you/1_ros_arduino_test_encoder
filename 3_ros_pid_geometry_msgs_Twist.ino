@@ -12,11 +12,24 @@ const int PIN_RIGHT_INA = 8;
 const int PIN_RIGHT_INB = 9;
 const int PIN_RIGHT_PWM = 7;
 
-const int PIN_ENCODE_A_MOTOR_LEFT = 2;
-const int PIN_ENCODE_B_MOTOR_LEFT = 3;
+//You Can Buy with : https://www.amazon.com/MITUHAKI-Motor-Gear-Encoder-Mounting/dp/B07XC63724
+//DC 6 V 210 RPM Encoder MOTOR LEFT
+// Black =>  Ground
+// Red => Power
+// Yellow => PIN 2
+// Green => PIN 3
+// Blue => 3.3v
+const int PIN_ENCODE_A_MOTOR_LEFT = 2; // Yellow
+const int PIN_ENCODE_B_MOTOR_LEFT = 3; // Green
 
-const int PIN_ENCODE_A_MOTOR_RIGHT = 18;
-const int PIN_ENCODE_B_MOTOR_RIGHT = 19;
+//DC 6 V 210 RPM Encoder MOTOR LEFT
+// Black =>  Ground
+// Red => Power
+// Yellow => PIN 19
+// Green => PIN 18
+// Blue => 3.3v
+const int PIN_ENCODE_A_MOTOR_RIGHT = 18; // Green
+const int PIN_ENCODE_B_MOTOR_RIGHT = 19; // Yellow
 
 long pos_left = 0, pos_right = 0;
 long last_pos_left = 0, last_pos_right = 0;
